@@ -1,6 +1,7 @@
 import React from "react";
 import image from "../Assets/second-sec-image.png";
 
+
 const Home = () => {
   return (
     <div>
@@ -9,6 +10,12 @@ const Home = () => {
           <h1 className="hero-title">
             LET'S <br /> EMBRACE <br /> EQUITY
           </h1>
+          <button className="primary-button">DONATE NOW</button>
+        </div>
+      </div>
+      <div className="fundraising-section">
+        <div className="fundraising-content">
+          <h1 className="fundraising-title">FUNDRAISING CAMPAIGN OVERVIEW</h1>
           <button className="primary-button">DONATE NOW</button>
         </div>
       </div>

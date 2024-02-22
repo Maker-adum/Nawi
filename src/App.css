@@ -23,17 +23,14 @@ body {
 }
 
 nav {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   min-height: 90px;
-  background-color: transparent;
-  z-index: 1;
+  background-color: black;
   text-transform: uppercase;
+  height: 10vh;
 }
 
 .navbar-links-container {
@@ -66,7 +63,7 @@ nav {
   background-image: url("./Assets/hero-image.png");
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: start;
