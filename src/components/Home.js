@@ -1,5 +1,4 @@
 import React from "react";
-const icon1 = require("../Assets/icons/Icon1.png");
 
 const Home = () => {
   return (
