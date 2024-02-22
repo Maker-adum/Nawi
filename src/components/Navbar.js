@@ -1,51 +1,46 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link
 
 const Navbar = () => {
   const menuOptions = [
     {
       text: "Home",
-      url: "/"
+      url: "/",
     },
     {
       text: "About",
-      url: "#"
+      url: "/about",
     },
     {
       text: "Support Us",
-      url: "#"
-
+      url: "/fundraising",
     },
     {
       text: "Fundraising Goals",
-      url: "#"
-
+      url: "/fundraising",
     },
     {
       text: "News",
-      url: "#"
-
+      url: "/news",
     },
     {
       text: "Impact",
-      url: "#"
-
+      url: "/impact",
     },
     {
       text: "Contact",
-      url: "#"
-
+      url: "/contact",
     },
   ];
 
   return (
     <nav>
-      <div className="nav-logo-container">
-      </div>
+      <div className="nav-logo-container"></div>
       <div className="navbar-links-container">
         {menuOptions.map((item) => (
-          <a key={item.text} href="{item.url}">
+          <Link key={item.text} to={item.url} className="navbar-link">
             {item.text}
-          </a>
+          </Link>
         ))}
       </div>
     </nav>
