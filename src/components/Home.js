@@ -1,7 +1,6 @@
 import React from "react";
 import image from "../Assets/second-sec-image.png";
 
-
 const Home = () => {
   return (
     <div>
