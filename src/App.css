@@ -107,8 +107,47 @@ nav {
 }
 
 
+.fundraising-overview {
+  text-align: center;
+  margin-top: 50px;
+  background-color: #000;
+  margin: auto 0 auto;
+}
+
+.fundraising-overview-h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #ff5f05;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon {
+  text-align: center;
+}
+
+.icon img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.icon p {
+  font-size: 16px;
+  color: white !important;
+}
+
+.trailer-section {
+  align-items: center;
+}
+
+
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
   }
-}
+} 
