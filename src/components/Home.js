@@ -5,6 +5,7 @@ import Icon2 from "../Assets/icons/Icon2.png";
 import Icon3 from "../Assets/icons/Icon3.png";
 import Icon4 from "../Assets/icons/Icon4.png";
 import trailer from "../Assets/trailer.png";
+import lastSecImage from "../Assets/lastSecImage.png";
 
 const Home = () => {
   return (
@@ -79,7 +80,7 @@ const Home = () => {
       <div className="additional-section">
         <div className="additional-section-left">
           <img
-            src={image}
+            src={lastSecImage}
             alt="Last Section Image"
             className="additional-image"
           />
@@ -101,7 +102,7 @@ const Home = () => {
           <div className="progress-bar">{/* Progress bar */}</div>
           <div className="donate-button">
             <button className="primary-button">DONATE</button>
-            <button className="secondary-button">JOIN THE COMMUNITY</button>
+            <button className="primary-button">JOIN THE COMMUNITY</button>
           </div>
         </div>
       </div>
