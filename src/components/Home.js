@@ -5,7 +5,6 @@ import Icon2 from "../Assets/icons/Icon2.png";
 import Icon3 from "../Assets/icons/Icon3.png";
 import Icon4 from "../Assets/icons/Icon4.png";
 import trailer from "../Assets/trailer.png";
-import lastSecImage from "../Assets/lastSecImage.png";
 
 const Home = () => {
   return (
@@ -76,35 +75,6 @@ const Home = () => {
       <div className="trailer-section">
         <h2 className="trailer-title">TRAILER</h2>
         <img src={trailer} alt="Nawi Trailer" className="trailer-image" />
-      </div>
-      <div className="additional-section">
-        <div className="additional-section-left">
-          <img
-            src={lastSecImage}
-            alt="Last Section Image"
-            className="additional-image"
-          />
-        </div>
-        <div className="additional-section-right">
-          <div className="additional-text">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse nec sagittis justo. Integer convallis arcu id ante
-              ullamcorper, ut commodo velit scelerisque. Fusce vitae ligula sed
-              dolor vestibulum fermentum. Mauris quis elit in dui pretium
-              lacinia. Nullam convallis est a erat iaculis, eu eleifend diam
-              efficitur. Nulla facilisi. Curabitur auctor, mauris at porta
-              hendrerit, odio leo viverra mi, id ultrices ex justo ac lorem.
-              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-              posuere cubilia curae; In hac habitasse platea dictumst.
-            </p>
-          </div>
-          <div className="progress-bar">{/* Progress bar */}</div>
-          <div className="donate-button">
-            <button className="primary-button">DONATE</button>
-            <button className="primary-button">JOIN THE COMMUNITY</button>
-          </div>
-        </div>
       </div>
     </div>
   );
