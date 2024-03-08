@@ -39,7 +39,8 @@ const Home = () => {
       </div>
       <div className="fundraising-overview">
         <h2 className="fundraising-overview-h2">
-          FUNDRAISING CAMPAIGN OVERVIEW
+          FUNDRAISING CAMPAIGN <br />{" "}
+          <span style={{ color: "white" }}>Overview</span>
         </h2>
         <div className="icons-container">
           <div className="icon">
@@ -75,6 +76,26 @@ const Home = () => {
       <div className="trailer-section">
         <h2 className="trailer-title">TRAILER</h2>
         <img src={trailer} alt="Nawi Trailer" className="trailer-image" />
+      </div>
+      <div className="progress-bar-section">
+        <div className="progress-column">
+          <img src={image} alt="Fundraising Image" />
+        </div>
+        <div className="progress-column">
+          <h2>Progress</h2>
+          <p className="description">
+            Elevate the reel and make a real impact! Stay tuned for exclusive
+            updates, behind-the-scenes moments, and the journey of our film.
+            Join us in turning dreams into reality.
+          </p>
+          <div className="progress-bar">
+            <div className="progress"></div>
+          </div>
+          <div className="buttons">
+            <button className="primary-button">Donate</button>
+            <button className="primary-button">Join the Community</button>
+          </div>
+        </div>
       </div>
     </div>
   );

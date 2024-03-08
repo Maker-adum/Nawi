@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Reem Kufi", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 img {
@@ -81,13 +81,9 @@ nav {
   font-size: 40px;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-.row{
-  background-color:#000; 
-  color:white;
+.row {
+  background-color: #000;
+  color: white;
   font-size: x-large;
 }
 
@@ -95,16 +91,18 @@ nav {
   float: left;
   width: 50%;
   padding: 10px;
-  
+  margin-top: 40px;
 }
 
+.fundraising-text {
+  margin-top: 55px;
+}
 
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-
 
 .fundraising-overview {
   text-align: center;
@@ -113,12 +111,14 @@ nav {
   margin: auto 0 auto;
   font-size: 24px;
   color: #ff5f05;
+  padding-top: 30px;
 }
 
 .icons-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-top: 40px;
 }
 
 .icon {
@@ -136,29 +136,65 @@ nav {
   color: white !important;
 }
 
-
 .trailer-section {
   background-color: #000;
+  margin-top: 50px;
+  margin: 0px;
+  padding: 40px;
 }
 
 .trailer-title {
   text-align: center;
-  margin-top: 50px;
-  margin: auto 0 auto;
-  font-size: 24px;
+  font-size: 36px;
+  font-weight: bold;
   color: #ff5f05;
+  margin-bottom: 20px;
 }
 
 .trailer-image {
   width: 100%;
-  max-width: 100%;
-  height: 100vh;
+  height: 96vh;
+  margin-top: 10px;
 }
 
+.progress-bar-section {
+  font-size: x-large;
+  background-color: black;
+}
 
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-} 
+.progress-column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
 
+.progress-column h2 {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 70px;
+  height: 20px;
+  background-color: #ff5f05;
+  width: 50%; /* You can adjust this width based on the progress */
+  border-radius: 5px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  margin-top: 40px;
+}
