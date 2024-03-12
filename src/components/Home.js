@@ -5,6 +5,7 @@ import Icon2 from "../Assets/icons/Icon2.png";
 import Icon3 from "../Assets/icons/Icon3.png";
 import Icon4 from "../Assets/icons/Icon4.png";
 import trailer from "../Assets/trailer.png";
+import ProgressBar from "../ProgressBarComponents/ProgressBar";
 
 const Home = () => {
   return (
@@ -88,8 +89,10 @@ const Home = () => {
             updates, behind-the-scenes moments, and the journey of our film.
             Join us in turning dreams into reality.
           </p>
-          <div className="progress-bar">
-            <div className="progress"></div>
+          <div className="progress-bar" style={{ width: '90%' }}>
+            <div className="progress">
+              <ProgressBar totalMilestones={5} milestonesCompleted={3} />
+            </div>
           </div>
           <div className="buttons">
             <button className="primary-button">Donate</button>
