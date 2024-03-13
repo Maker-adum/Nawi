@@ -5,7 +5,7 @@ import Icon2 from "../Assets/icons/Icon2.png";
 import Icon3 from "../Assets/icons/Icon3.png";
 import Icon4 from "../Assets/icons/Icon4.png";
 import trailer from "../Assets/trailer.png";
-import ProgressBar from "../ProgressBarComponents/ProgressBar";
+import ProgressBar from "./ProgressBar";
 
 const Home = () => {
   return (
