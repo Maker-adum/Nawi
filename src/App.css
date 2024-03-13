@@ -167,6 +167,61 @@ nav {
   height: auto;
 }
 
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+} 
+
+.about-title{
+  text-align: center;
+  margin-top: 50px;
+  margin: auto 0 auto;
+  font-size: 40px;
+  color: #ff5f05;
+}
+
+.about{
+  background-color: #000;
+  color: #fff;
+  
+  padding-top: 30px;
+  text-align: center;
+  
+}
+.our-team{
+  display: flex;
+  justify-content: space-around;
+  margin: 30px;;
+  
+}
+.team{
+  padding: 10px;
+  flex: 50%;
+} 
+
+.our-team2{
+  display: flex;
+  justify-content: space-around;
+  margin: 30px;;
+  
+}
+.team2{
+  padding: 10px;
+  flex: 50%;
+} 
+
+.our-mission{
+  text-align: center;
+}
+.mission-title{
+  text-align: center;
+  margin-top: 50px;
+  margin: auto 0 auto;
+  font-size: 40px;
+  color: #ff5f05;
+}
 .progress-bar-section {
   display: flex;
   flex-wrap: wrap;
