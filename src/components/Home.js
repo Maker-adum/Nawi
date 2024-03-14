@@ -5,6 +5,7 @@ import Icon2 from "../Assets/icons/Icon2.png";
 import Icon3 from "../Assets/icons/Icon3.png";
 import Icon4 from "../Assets/icons/Icon4.png";
 import trailer from "../Assets/trailer.png";
+import ProgressBar from "./ProgressBar";
 
 const Home = () => {
   return (
@@ -39,42 +40,78 @@ const Home = () => {
       </div>
       <div className="fundraising-overview">
         <h2 className="fundraising-overview-h2">
-          FUNDRAISING CAMPAIGN OVERVIEW
+          FUNDRAISING CAMPAIGN <br />{" "}
+          <span style={{ color: "white" }}>Overview</span>
         </h2>
         <div className="icons-container">
-          <div className="icon">
-            <img src={Icon1} alt="Icon 1" />
-            <p>
-              EDUCATION <br /> INITIATIVES
-            </p>
-            <p>lorem ipsum</p>
+          <div className="column-50">
+            <div className="icon">
+              <img src={Icon1} alt="Icon 1" />
+              <p>
+                EDUCATION <br /> INITIATIVES
+              </p>
+              <p>lorem ipsum</p>
+            </div>
           </div>
-          <div className="icon">
-            <img src={Icon2} alt="Icon 2" />
-            <p>
-              COMMUNITY <br /> RESILIENCE
-            </p>
-            <p>lorem ipsum</p>
+          <div className="column-50">
+            <div className="icon">
+              <img src={Icon2} alt="Icon 2" />
+              <p>
+                COMMUNITY <br /> RESILIENCE
+              </p>
+              <p>lorem ipsum</p>
+            </div>
           </div>
-          <div className="icon">
-            <img src={Icon3} alt="Icon 3" />
-            <p>
-              INFRASTRUCTURE <br /> DEVELOPMENT
-            </p>
-            <p>lorem ipsum</p>
+          <div className="column-50">
+            <div className="icon">
+              <img src={Icon3} alt="Icon 3" />
+              <p>
+                INFRASTRUCTURE <br /> DEVELOPMENT
+              </p>
+              <p>lorem ipsum</p>
+            </div>
           </div>
-          <div className="icon">
-            <img src={Icon4} alt="Icon 4" />
-            <p>
-              FAMILY <br /> SUPPORT
-            </p>
-            <p>lorem ipsum</p>
+          <div className="column-50">
+            <div className="icon">
+              <img src={Icon4} alt="Icon 4" />
+              <p>
+                FAMILY <br /> SUPPORT
+              </p>
+              <p>lorem ipsum</p>
+            </div>
           </div>
         </div>
       </div>
       <div className="trailer-section">
         <h2 className="trailer-title">TRAILER</h2>
         <img src={trailer} alt="Nawi Trailer" className="trailer-image" />
+      </div>
+      <div className="progress-bar-section">
+        <div className="column">
+          <div className="progress-column">
+            <img src={image} alt="Fundraising Image" />
+          </div>
+        </div>
+
+        <div className="column">
+          <div className="progress-column column">
+            <h2>Progress</h2>
+            <p className="description">
+              Elevate the reel and make a real impact! Stay tuned for exclusive
+              updates, behind-the-scenes moments, and the journey of our film.
+              Join us in turning dreams into reality.
+            </p>
+            <div className="progress-bar" style={{ width: "90%" }}>
+              <div className="progress">
+                <ProgressBar totalMilestones={5} milestonesCompleted={3} />
+              </div>
+            </div>
+            <div className="buttons">
+              <button className="primary-button">Donate</button>
+              <button className="primary-button">Join the Community</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
