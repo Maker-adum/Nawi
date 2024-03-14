@@ -25,7 +25,7 @@ img {
 .App {
   min-height: 100vh;
   width: 100vw;
-  max-width: 1900px;
+  max-width: 100%;
   margin: 0rem auto;
 }
 
@@ -60,7 +60,7 @@ body {
 .navbar-links-container {
   display: flex;
   align-items: center;
-  margin-right: 3rem;
+  padding-left: 3rem;
 }
 
 .navbar-links-container a {
@@ -69,6 +69,7 @@ body {
   font-size: 1.1rem;
   font-weight: 600;
   margin-right: 3rem;
+  white-space: nowrap;
 }
 
 .hamburger-menu {
@@ -372,18 +373,57 @@ body {
 }
 
 .fundraising-goal {
-  width: 250px; 
-  padding: 20px;
+  width: 250px;
+  height: 250px; 
+  perspective: 1000px;
+  border-radius: 15px; 
+  overflow: hidden; 
+
   border: 1px solid #ccc;
   border-radius: 5px;
+  overflow: hidden;
+}
+
+.fundraising-goal > div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.5s;
+}
+
+.fundraising-goal:hover .front-content {
+  transform: rotateY(-180deg);
+}
+
+.fundraising-goal:hover .back-content {
+  transform: rotateY(0deg);
+}
+
+.front-content {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.back-content {
+  transform: rotateY(180deg);
   background-color: #f9f9f9;
   color: #333;
 }
 
 .fundraising-goal h3 {
   margin-top: 0;
+  padding-top: 20px;
 }
 
 .fundraising-goal p {
   margin-bottom: 10px;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.fundraising-goal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

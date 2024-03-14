@@ -21,7 +21,7 @@ const Home = () => {
       <div className="row">
         <div className="column">
           <div className="fundraising-section">
-            <img src={image} alt="Fundraising Image" />
+            <img src={image}/>
           </div>
         </div>
         <div className="column">

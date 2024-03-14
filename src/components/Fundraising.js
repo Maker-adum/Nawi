@@ -1,12 +1,15 @@
 import React from "react";
+import image from "../Assets/secondSecImage.png";
+
+console.log("../Assets/secondSecImage.png:", image);
 
 const fundraisingGoals = [
   {
     title: "Completion of Loropio Girls Senior High School",
     description:
       "This project aims to complete the construction of Loropio Girls Senior High School, providing better educational facilities for girls in the region.",
-      image: "../Assets/SecondSecImage",
-  },
+      images: "../Assets/SecondSecImage1.png",
+    },
   {
     title: "Extension of Loropio Girls Senior High School",
     description:
@@ -83,14 +86,20 @@ const fundraisingGoals = [
   },
 ];
 
-const FundraisingGoal = ({ title, description, fundraisingGoal }) => {
+const FundraisingGoal = ({ title, description, image }) => {
   return (
     <div className="fundraising-goal">
-      <h3>{title}</h3>
-      <p>{description}</p>
+      <div className="front-content">
+        <h3>{title}</h3>
+        <p>{description}</p>
+      </div>
+      <div className="back-content">
+        <img src={image} alt={title} />
+      </div>
     </div>
   );
 };
+
 
 const Fundraising = () => {
   return (
@@ -103,7 +112,6 @@ const Fundraising = () => {
             title={goal.title}
             description={goal.description}
             fundraisingGoal={goal.fundraisingGoal}
-            image={goal.image}
           />
         ))}
       </div>
