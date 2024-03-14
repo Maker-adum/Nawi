@@ -210,3 +210,16 @@ nav {
   font-size: 40px;
   color: #ff5f05;
 }
+
+.footer {
+  background-color: black;
+  color: rgb(146, 29, 29);
+  padding: 20px;
+
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  
+}
