@@ -1,7 +1,9 @@
-import React from "react";
-import { Link } from "react-router-dom"; // Import Link
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
   const menuOptions = [
     {
       text: "Home",
@@ -34,9 +36,18 @@ const Navbar = () => {
   ];
 
   return (
-    <nav>
-      <div className="nav-logo-container"></div>
-      <div className="navbar-links-container">
+    <nav className="navbar">
+      <div className="nav-logo-container">
+        <img src="../Assets/nawi logo-01.png" alt="Logo" className="logo" />
+      </div>
+      
+            <div className="hamburger-menu" onClick={() => setShowMenu(!showMenu)}>
+        <div className={showMenu ? "open" : ""}></div>
+        <div className={showMenu ? "open" : ""}></div>
+        <div className={showMenu ? "open" : ""}></div>
+      </div>
+      
+      <div className={`navbar-links-container ${showMenu ? "show" : ""}`}>
         {menuOptions.map((item) => (
           <Link key={item.text} to={item.url} className="navbar-link">
             {item.text}

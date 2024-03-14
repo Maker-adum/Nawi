@@ -5,6 +5,7 @@ const fundraisingGoals = [
     title: "Completion of Loropio Girls Senior High School",
     description:
       "This project aims to complete the construction of Loropio Girls Senior High School, providing better educational facilities for girls in the region.",
+      image: "../Assets/SecondSecImage",
   },
   {
     title: "Extension of Loropio Girls Senior High School",
@@ -102,6 +103,7 @@ const Fundraising = () => {
             title={goal.title}
             description={goal.description}
             fundraisingGoal={goal.fundraisingGoal}
+            image={goal.image}
           />
         ))}
       </div>
