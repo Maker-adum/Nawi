@@ -8,6 +8,7 @@ import Fundraising from "./components/Fundraising";
 import News from "./components/News";
 import Impact from "./components/Impact";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/impact" element={<Impact />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <footer />
       </div>
     </Router>
   );

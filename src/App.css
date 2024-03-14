@@ -431,3 +431,15 @@ body {
   height: 100%;
   object-fit: cover;
 }
+.footer {
+  background-color: black;
+  color: rgb(146, 29, 29);
+  padding: 20px;
+
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  
+}
