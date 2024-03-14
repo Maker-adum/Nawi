@@ -13,7 +13,7 @@ img {
 .App {
   min-height: 100vh;
   width: 100vw;
-  max-width: 1900px;
+  max-width: 100%;
   margin: 0rem auto;
 }
 
@@ -45,6 +45,7 @@ nav {
   font-size: 1.1rem;
   font-weight: 600;
   margin-right: 3rem;
+  white-space: nowrap;
 }
 
 .primary-button {
