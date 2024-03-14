@@ -22,6 +22,12 @@ const About = () => {
             also to use this emotional medium to foster social impact. <br />
             To change people‘s minds – and lives!
           </p>
+          <p>
+            Duis et diam ut urna pulvinar condimentum. Orci varius natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            In et turpis laoreet, vestibulum leo vitae, tincidunt purus. Nam
+            commodo tempus justo, at aliquet odio rutrum.
+          </p>
         </div>
         <div className="our-team2">
           <div className="team2">
@@ -78,9 +84,18 @@ const About = () => {
           <p>
             We are a young FilmCrew from Munich, Germany, committed to making
             movies not only for their own sake but also to use this emotional
-            medium to foster social impact. <br />To change people‘s minds – and
-            lives!
+            medium to foster social impact. <br />
+            To change people‘s minds – and lives!
           </p>
+          <p> Aenean rutrum justo
+            diam, a ullamcorper orci tristique eget. Suspendisse varius, nisi ut
+            egestas dictum, mauris lacus aliquam neque, in hendrerit orci lectus
+            et diam. Etiam vulputate arcu eget eros vulputate, sed sagittis
+            sapien vehicula. Aenean rutrum justo
+            diam, a ullamcorper orci tristique eget. Suspendisse varius, nisi ut
+            egestas dictum, mauris lacus aliquam neque, in hendrerit orci lectus
+            et diam. Etiam vulputate arcu eget eros vulputate, sed sagittis
+            sapien vehicula.</p>
         </div>
       </div>
     </div>

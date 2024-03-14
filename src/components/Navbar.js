@@ -15,7 +15,7 @@ const Navbar = () => {
     },
     {
       text: "Support Us",
-      url: "/fundraising",
+      url: "/support",
     },
     {
       text: "Fundraising Goals",
