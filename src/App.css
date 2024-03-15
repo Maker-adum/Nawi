@@ -217,7 +217,11 @@ body {
 
 .icon p {
   font-size: 16px;
-  color: #fff !important;
+  color: #fff !important; 
+  /* TODO: 
+  get rid of important in coding session
+  might be a good idea to make all of this code more specific. 
+   */
 }
 
 .trailer-section {
@@ -297,17 +301,17 @@ body {
   font-size: 40px;
   color: #ff5f05;
 }
+
 .progress-bar-section {
   display: flex;
   flex-wrap: wrap;
   font-size: x-large;
-  background-color: #000 !important;
-
+  background-color: #000;
 }
 
 .progress-column {
     flex: 1; 
-    background-color: #000 !important;
+    background-color: #000;
     color: #fff;
     padding: 10px;
 }
