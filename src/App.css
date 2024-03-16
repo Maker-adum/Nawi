@@ -48,11 +48,11 @@ body {
 .nav-logo-container {
   display: flex;
   align-items: center;
-  margin-left: 3rem;
+  margin-left: 2rem;
 }
 
 .logo {
-  width: 50px; 
+  width: 100px; 
   height: auto; 
   margin-right: 1rem; 
 }
