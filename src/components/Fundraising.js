@@ -119,7 +119,7 @@ const FundraisingGoal = ({ title, description, image }) => {
 const Fundraising = () => {
   return (
     <div className="App">
-      <h1 style={{ color: "#ff5f05" }}>FUNDRAISING GOALS</h1>
+      <h1 style={{ color: "#ff5f05", fontSize: 50 }}>FUNDRAISING GOALS</h1>
       <div className="fundraising-goals-container">
         {fundraisingGoals.map((goal, index) => (
           <FundraisingGoal
