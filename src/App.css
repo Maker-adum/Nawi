@@ -113,10 +113,10 @@ body {
     flex-direction: column;
     position: absolute;
     top: 16%;
-    left: 50%;
+    left: 45%;
     width: 50%;
     background-color: #000;
-    opacity: 50%;
+    opacity: 1;
     padding-top: 20px;
   }
 
@@ -218,10 +218,6 @@ body {
 .icon p {
   font-size: 16px;
   color: #fff !important; 
-  /* TODO: 
-  get rid of important in coding session
-  might be a good idea to make all of this code more specific. 
-   */
 }
 
 .trailer-section {
@@ -377,12 +373,11 @@ body {
 }
 
 .fundraising-goal {
-  width: 250px;
+  width: 100% !important;
   height: 250px; 
   perspective: 1000px;
   border-radius: 15px; 
   overflow: hidden; 
-
   border: 1px solid #ccc;
   border-radius: 5px;
   overflow: hidden;
@@ -393,7 +388,7 @@ body {
   height: 100%;
   position: absolute;
   backface-visibility: hidden;
-  transition: transform 0.5s;
+  transition: transform 0.5s; 
 }
 
 .fundraising-goal:hover .front-content {
@@ -404,20 +399,20 @@ body {
   transform: rotateY(0deg);
 }
 
-.front-content {
+/* .front-content {
   background-color: #f9f9f9;
   color: #333;
-}
+} */
 
 .back-content {
   transform: rotateY(180deg);
-  background-color: #f9f9f9;
-  color: #333;
+  color: #fff;
 }
 
 .fundraising-goal h3 {
-  margin-top: 0;
+  margin-top: -62%;
   padding-top: 20px;
+  color: white;
 }
 
 .fundraising-goal p {
@@ -430,4 +425,47 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: 0.4;
 }
+
+@media only screen and (max-width: 768px) {
+  .fundraising-goals-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .fundraising-goals-container {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+  }
+}
+
+
+.news-container {
+  display: flex;
+  align-items: center;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.text-container {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.text-container p {
+  margin: 10px 0;
+  color: #fff;
+}
+
+
+
