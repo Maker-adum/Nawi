@@ -146,7 +146,7 @@ body {
   height: 90vh;
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   width: 100%;
 }
 
@@ -536,4 +536,27 @@ margin-top:30px;
   color: #fff;
   padding: 30px 40px;
   text-align: center;
+}
+.contact-us{
+  background-image: url("./Assets/wakanda.png");
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+  justify-content: start;
+  width: 100%;
+
+}
+.contact-page{
+  color:#ff5f05;
+  margin-bottom:50px;
+  font-size: 40px;
+  font-weight: 800;
+}
+.email{
+  justify-content: start;
+  height: 45vh;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  display: block;
+  margin-left: 200px;
 }
