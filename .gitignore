@@ -9,9 +9,7 @@
 /coverage
 
 # build
-/dist/*
-dist
-// will this definitely not add the ./dist folder? 
+/dist/
 
 # misc
 .DS_Store
