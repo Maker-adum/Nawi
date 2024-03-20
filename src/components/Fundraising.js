@@ -8,8 +8,8 @@ const fundraisingGoals = [
     title: "Completion of Loropio Girls Senior High School",
     description:
       "This project aims to complete the construction of Loropio Girls Senior High School, providing better educational facilities for girls in the region.",
-      images: "../Assets/SecondSecImage1.png",
-    },
+    images: "../Assets/SecondSecImage1.png",
+  },
   {
     title: "Extension of Loropio Girls Senior High School",
     description:
@@ -67,7 +67,8 @@ const fundraisingGoals = [
   },
   {
     title: "Building New Junior Secondary School",
-    description: "This project focuses on constructing a new junior secondary school to address the growing demand for quality education in the community.", 
+    description:
+      "This project focuses on constructing a new junior secondary school to address the growing demand for quality education in the community.",
   },
   {
     title: "Intervention and Rescue Teams",
@@ -100,11 +101,33 @@ const FundraisingGoal = ({ title, description, image }) => {
   );
 };
 
-
 const Fundraising = () => {
   return (
     <div className="App">
       <h1 style={{ color: "#ff5f05" }}>FUNDRAISING GOALS</h1>
+      <div
+        className="donorbox"
+        // style={{ border: "2px dashed red", background: "white" }}
+      >
+        <h1>
+          DONORBOX
+          <iframe
+            src="https://donorbox.org/embed/test-nawi-film?language=en"
+            name="donorbox"
+            allowPaymentRequest="allowpaymentrequest"
+            seamless="seamless"
+            frameBorder="0"
+            scrolling="no"
+            height="900px"
+            width="100%"
+            style={{
+              // maxWidth: "500px",
+              minWidth: "250px",
+              maxHeight: "none!important",
+            }}
+          ></iframe>
+        </h1>
+      </div>
       <div className="fundraising-goals-container">
         {fundraisingGoals.map((goal, index) => (
           <FundraisingGoal

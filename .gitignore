@@ -8,8 +8,10 @@
 # testing
 /coverage
 
-# production
-/build
+# build
+/dist/*
+dist
+// will this definitely not add the ./dist folder? 
 
 # misc
 .DS_Store
