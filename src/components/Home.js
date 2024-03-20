@@ -94,7 +94,7 @@ const Home = () => {
         </div>
 
         <div className="column">
-          <div className="progress-column column">
+          <div className="progress-column">
             <h2>Progress</h2>
             <p className="description">
               Elevate the reel and make a real impact! Stay tuned for exclusive
