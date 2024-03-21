@@ -115,11 +115,33 @@ const FundraisingGoal = ({ title, description, image }) => {
   );
 };
 
-
 const Fundraising = () => {
   return (
     <div className="App">
-      <h1 style={{ color: "#ff5f05", fontSize: 50 }}>FUNDRAISING GOALS</h1>
+      <h1 style={{ color: "#ff5f05" }}>FUNDRAISING GOALS</h1>
+      <div
+        className="donorbox"
+        // style={{ border: "2px dashed red", background: "white" }}
+      >
+        <h1>
+          DONORBOX
+          <iframe
+            src="https://donorbox.org/embed/test-nawi-film?language=en"
+            name="donorbox"
+            allowPaymentRequest="allowpaymentrequest"
+            seamless="seamless"
+            frameBorder="0"
+            scrolling="no"
+            height="900px"
+            width="100%"
+            style={{
+              // maxWidth: "500px",
+              minWidth: "250px",
+              maxHeight: "none!important",
+            }}
+          ></iframe>
+        </h1>
+      </div>
       <div className="fundraising-goals-container">
         {fundraisingGoals.map((goal, index) => (
           <FundraisingGoal
