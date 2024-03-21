@@ -21,7 +21,7 @@ const Home = () => {
       <div className="row">
         <div className="column">
           <div className="fundraising-section">
-            <img src={image}/>
+            <img src={image} alt="fundraising"/>
           </div>
         </div>
         <div className="column">
@@ -89,7 +89,7 @@ const Home = () => {
       <div className="progress-bar-section">
         <div className="column">
           <div className="progress-column">
-            <img src={image} alt="Fundraising Image" />
+            <img src={image} alt="Fundraising here" />
           </div>
         </div>
 
