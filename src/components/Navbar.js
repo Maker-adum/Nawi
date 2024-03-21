@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import logo from "../Assets/nawi logo-01 (1).png"
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -15,7 +16,7 @@ const Navbar = () => {
     },
     {
       text: "Support Us",
-      url: "/fundraising",
+      url: "/support",
     },
     {
       text: "Fundraising Goals",
@@ -38,7 +39,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="nav-logo-container">
-        <img src="../Assets/nawi logo-01.png" alt="Logo" className="logo" />
+        <img src={logo} alt="Logo" className="logo" />
       </div>
       
             <div className="hamburger-menu" onClick={() => setShowMenu(!showMenu)}>
