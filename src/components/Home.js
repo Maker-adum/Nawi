@@ -4,7 +4,6 @@ import Icon1 from "../Assets/icons/Icon1.png";
 import Icon2 from "../Assets/icons/Icon2.png";
 import Icon3 from "../Assets/icons/Icon3.png";
 import Icon4 from "../Assets/icons/Icon4.png";
-import trailer from "../Assets/trailer.png";
 import ProgressBar from "./ProgressBar";
 
 const Home = () => {
@@ -21,7 +20,7 @@ const Home = () => {
       <div className="row">
         <div className="column">
           <div className="fundraising-section">
-            <img src={image} alt="fundraising"/>
+            <img src={image} alt="fundraising" />
           </div>
         </div>
         <div className="column">
@@ -84,7 +83,13 @@ const Home = () => {
       </div>
       <div className="trailer-section">
         <h2 className="trailer-title">TRAILER</h2>
-        <img src={trailer} alt="Nawi Trailer" className="trailer-image" />
+        <iframe
+          src="https://www.youtube.com/watch?v=9_G2ZCx62UQ"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+          title="video"
+        />
       </div>
       <div className="progress-bar-section">
         <div className="column">
