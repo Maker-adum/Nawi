@@ -4,7 +4,6 @@ import Icon1 from "../Assets/icons/Icon1.png";
 import Icon2 from "../Assets/icons/Icon2.png";
 import Icon3 from "../Assets/icons/Icon3.png";
 import Icon4 from "../Assets/icons/Icon4.png";
-import trailer from "../Assets/trailer.png";
 import ProgressBar from "./ProgressBar";
 
 const Home = () => {
@@ -21,7 +20,7 @@ const Home = () => {
       <div className="row">
         <div className="column">
           <div className="fundraising-section">
-            <img src={image} alt="fundraising"/>
+            <img src={image} alt="fundraising" />
           </div>
         </div>
         <div className="column">
@@ -84,7 +83,22 @@ const Home = () => {
       </div>
       <div className="trailer-section">
         <h2 className="trailer-title">TRAILER</h2>
-        <img src={trailer} alt="Nawi Trailer" className="trailer-image" />
+        <iframe
+          src="https://player.vimeo.com/video/87816089?h=097a3a1c0a&color=ffffff&byline=0&portrait=0"
+          width="900"
+          height="500"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <p>
+          <a href="https://vimeo.com/87816089">
+            KEDI - a.k.a. Nine Lives - Cats in Istanbul - TRAILER 1
+          </a>{" "}
+          from{" "}
+          <a href="https://vimeo.com/charliewuppermann">Charlie Wuppermann</a>{" "}
+          on <a href="https://vimeo.com">Vimeo</a>.
+        </p>
       </div>
       <div className="progress-bar-section">
         <div className="column">
