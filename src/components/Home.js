@@ -84,12 +84,21 @@ const Home = () => {
       <div className="trailer-section">
         <h2 className="trailer-title">TRAILER</h2>
         <iframe
-          src="https://www.youtube.com/watch?v=9_G2ZCx62UQ"
+          src="https://player.vimeo.com/video/87816089?h=097a3a1c0a&color=ffffff&byline=0&portrait=0"
+          width="900"
+          height="500"
           frameborder="0"
-          allow="autoplay; encrypted-media"
+          allow="autoplay; fullscreen; picture-in-picture"
           allowfullscreen
-          title="video"
-        />
+        ></iframe>
+        <p>
+          <a href="https://vimeo.com/87816089">
+            KEDI - a.k.a. Nine Lives - Cats in Istanbul - TRAILER 1
+          </a>{" "}
+          from{" "}
+          <a href="https://vimeo.com/charliewuppermann">Charlie Wuppermann</a>{" "}
+          on <a href="https://vimeo.com">Vimeo</a>.
+        </p>
       </div>
       <div className="progress-bar-section">
         <div className="column">
