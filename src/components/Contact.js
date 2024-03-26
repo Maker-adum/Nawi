@@ -1,16 +1,15 @@
 import React from "react";
+import { useState } from "react";
 import Icon10 from "../Assets/icons/icon10.png";
 import Icon11 from "../Assets/icons/icon11.png";
 
-function handleSubmit() {
-  console.log("handleSubmit");
-}
-function handleEmailChange() {
-  console.log("handleEmailChange");
-}
-
 const Contact = () => {
-  let email = "";
+  const [email, setEmail] = useState("");
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  
+   
+  };
   return (
     <div className="contact-page">
       <h1 className="contact-title">CONTACT US</h1>
@@ -19,17 +18,14 @@ const Contact = () => {
           <img className="email" src={Icon10} alt="icon 10" />
           <img className="email" src={Icon11} alt="icon 11" />
         </div>
-        <form onSubmit={handleSubmit}>
+
+        <form onSubmit={(e) => setEmail(e.target.value)}>
           <input
-            aria-label="Your email address"
-            name="email_address"
-            placeholder="Your email address"
-            required
+            email="email_address"
             type="email"
-            onChange={handleEmailChange}
             value={email}
           />
-          <button>SUBSCRIBE</button>
+          <input type="submit" />
         </form>
       </div>
     </div>
